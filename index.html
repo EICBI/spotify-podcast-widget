@@ -1,40 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Spotify Podcast Widget</title>
-  <style>
-    body {
-      font-family: sans-serif;
-      padding: 20px;
-    }
-    .podcast-row {
-      display: flex;
-      gap: 20px;
-      overflow-x: auto;
-      padding: 10px;
-      scroll-snap-type: x mandatory;
-    }
-    iframe {
-      border-radius: 12px;
-      min-width: 300px;
-      height: 152px;
-      scroll-snap-align: start;
-    }
-  </style>
-</head>
-<body>
-  <h2>Latest Episodes</h2>
-  <div class="podcast-row">
-    <iframe src="https://open.spotify.com/embed/episode/6tBHHOnzKYKnVwU4EKWGr4?utm_source=generator"
-      frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
-    </iframe>
-    <iframe src="https://open.spotify.com/embed/episode/1OTNMjsEqYVpzcnxdzfwKm?utm_source=generator"
-      frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
-    </iframe>
-    <iframe src="https://open.spotify.com/embed/episode/4wMZT9VXfbnIN63ZuIwhqO?utm_source=generator"
-      frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
-    </iframe>
-  </div>
-</body>
-</html>
+<div style="display: flex; gap: 20px; overflow-x: auto; padding: 10px; scroll-snap-type: x mandatory;">
+  <!-- Episode 1 -->
+  <iframe style="border-radius:12px; min-width: 300px; height: 152px; scroll-snap-align: start;"
+    src="https://open.spotify.com/embed/episode/6tBHHOnzKYKnVwU4EKWGr4?utm_source=generator" 
+    width="100%" frameborder="0" allowfullscreen="" 
+    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
+  </iframe>
+
+  <!-- Episode 2 -->
+  <iframe style="border-radius:12px; min-width: 300px; height: 152px; scroll-snap-align: start;"
+    src="https://open.spotify.com/embed/episode/1OTNMjsEqYVpzcnxdzfwKm?utm_source=generator" 
+    width="100%" frameborder="0" allowfullscreen="" 
+    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
+  </iframe>
+
+  <!-- Episode 3 -->
+  <iframe style="border-radius:12px; min-width: 300px; height: 152px; scroll-snap-align: start;"
+    src="https://open.spotify.com/embed/episode/4wMZT9VXfbnIN63ZuIwhqO?utm_source=generator" 
+    width="100%" frameborder="0" allowfullscreen="" 
+    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
+  </iframe>
+</div>
